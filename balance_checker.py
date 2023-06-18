@@ -7,7 +7,7 @@ def get_balance(wallet, selected_chains):
 
     headers = {
         "accept": "application/json",
-        "authorization": "Basic emtfZGV2XzljZjdkZWM0MzNjOTRkODNiYzI1ZDhiZmU1MTk4ODI3Og=="
+        "authorization": "" # Check https://developers.zerion.io/
     }
 
     response = requests.get(url, headers=headers)

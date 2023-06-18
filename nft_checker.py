@@ -1,4 +1,3 @@
-import json
 import asyncio
 import aiohttp
 from loguru import logger
@@ -8,7 +7,7 @@ async def fetch_nft_positions(session, wallet, chain):
     url = f"https://api.zerion.io/v1/wallets/{wallet}/nft-positions/?filter[chain_ids]={chain}&currency=usd&page[size]=100"
     headers = {
         "accept": "application/json",
-        "authorization": "Basic emtfZGV2XzljZjdkZWM0MzNjOTRkODNiYzI1ZDhiZmU1MTk4ODI3Og=="
+        "authorization": "" # Check https://developers.zerion.io/
     }
 
     async with session.get(url, headers=headers) as response:
